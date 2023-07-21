@@ -1,6 +1,8 @@
-package-lock.json/
+/package-lock.json/
 /node_modules/
 /projects/01-hola-mundo/node_modules/
 /projects/01-hola-mundo/package-lock.json/
 /projects/02-tic-tac-toe/node_modules/
 /projects/02-tic-tac-toe/package-lock.json/
+/projects/03-mouse-follower/node_modules/
+/projects/03-mouse-follower/package-lock.json/
