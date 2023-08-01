@@ -12,6 +12,7 @@ function App() {
     const boardFromStorage = window.localStorage.getItem('board');
     if (boardFromStorage) return JSON.parse(boardFromStorage);
     return Array(9).fill(null);
+    // return boardFromStorage ? JSON.parse(boardFromStorage) : Array(9).fill(null);
   });
 
   const [turn, setTurn] = useState(() => {
@@ -32,12 +33,11 @@ function App() {
 
   const updateBoard = (index) => {
     // No actulizamos esta posición si ya tiene algo
-
     if (board[index] || winner) return
     // Actualizar el tablero
     const newBoard = [...board]; // Spread operator o rest operator
     newBoard[index] = turn; // X u O
-    setBoard(newBoard);
+    setBoard(newBoard); // Actualizamos
 
     // Cambiar el turno
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
