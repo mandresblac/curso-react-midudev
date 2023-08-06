@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css'
 import { useMovies } from './hocks/useMovies';
 import { Movies } from './components/Movies.jsx';
